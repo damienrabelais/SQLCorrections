@@ -52,3 +52,29 @@ select *
 from plante p
 inner join region r on (p.noregion = r. noregion)
 
+-- 11
+select nomregion, nomplante
+from region r
+inner join plante p on (r.noregion = p.noregion)
+order by nomregion, nomplante ASC
+
+-- 12
+select nomplante
+from plante p
+inner join emplacement e on (p.noplante = e.noplante)
+where noserre = 3
+
+-- 13
+select nomplante, nomregion
+from region r
+inner join plante p on (r.noregion = p.noregion)
+where nomregion like 'Afrique%'
+order by nomplante
+
+-- 14
+select p.noplante, nomplante
+from serre s
+inner join emplacement e on (s.noserre= e.noserre)
+inner join plante p on (e.noplante= p.noplante)
+where nomserre ='Exoticus'
+
