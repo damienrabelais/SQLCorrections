@@ -63,3 +63,13 @@ INSERT INTO necessiter VALUES(3, 'P003', 1);
 -- DETAIL:  La clé (reference)=(P003) n'est pas présente dans la table « piece ».
 
 -- Notre technicien essaye d’utiliser une pièce non référencée dans la base de données : incohérence !  L’ajout est refusé par PostgreSQL (car les contraintes de clés étrangères ont bien été implémentées !)
+
+
+
+
+
+
+
+
+
+
